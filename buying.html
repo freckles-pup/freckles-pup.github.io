@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Magic and Monsters Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a dnd website where you can by dnd books. the books were made by 13 yr old kids and this website was made by Teo">
+    <link rel=" shortcut icon" type="image/png" href="website_images/old_gray_dragon.gif">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <div class="logoimgwrapper"><img src="website_images/old_gray_dragon.gif" alt="" srcset=""></div>
+            </div>
+            <div class="navagation">
+                <ul class="menu">
+                    <div class="close-btn"></div>
+                    <li class="menu-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-item"><a class="sub-btn" href="#"><span class="activenavlinkbuy">BUY <i class="fas fa-angle-down"></i></span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item more">
+                                <a class="more-btn" href="#">Hardcover <i class="fas fa-angle-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="hardcoverhigh.html">High Quality Color</a></li>
+                                    <li class="more-item"><a href="hardcoverstandard.html">Standard Quality Color</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item more">
+                                <a class="more-btn" href="#">Softcover <i class="fas fa-angle-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="softcoverhigh.html">High Quality Color</a></li>
+                                    <li class="more-item"><a href="softcoverstandard.html">Standard Quality Color</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item"><a href="ebook.html">Ebook</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                    <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="menu-btn"></div>       
+        </header>
+        <section class="section-home">
+                <p><span class="gargantuan">Buying<br> A Book</span></span><br>$49.99 for a <a href="hardcoverhigh.html" class="link">Hardcover with high quality color</a></br>$20.99 for a <a href="hardcoverstandard.html" class="link">Hardcover with standard quality color</a><br>$20.99 for a <a href="softcoverhigh.html" class="link">Softcover with high quality color</a></br>$15.99 for a <a href="softcoverstandard.html" class="link">Softcover with standard quality color</a><br>$4.99 for a <a href="ebook.html" class="link">Ebook</a></br></p>
+                </body>
+        </section>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sub-btn").click(function(){
+                $(this).next(".sub-menu").slideToggle();
+            });
+            $(".more-btn").click(function(){
+                $(this).next(".more-menu").slideToggle();
+            });
+        });
+        var menu = document.querySelector(".menu")
+        var menuBtn = document.querySelector(".menu-btn")        
+        var closeBtn = document.querySelector(".close-btn") 
+        
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        </script>
+    </body>
+</html>

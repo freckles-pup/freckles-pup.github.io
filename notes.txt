@@ -1,0 +1,39 @@
+shortcuts:
+    .whatever = <div class="whatever"></div>
+    h2.whatever = <h2 class="whatever"></h2>
+    lorem = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iusto soluta. Et praesentium accusamus placeat iste quasi, consequatur rem quod id! Excepturi unde suscipit itaque incidunt eius. Distinctio, excepturi laboriosam.
+    img.s =  <img src="" alt="" srcset="">
+    ! = !DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    a = <a href=""></a>
+    h2.whatever.something = <h2 class="whatever something"></h2>(2 classes)
+    ul>li*3 = <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    script:src =  <script src=""></script>
+    </ = end tag
+    // if (isset($_POST['submit'])) {
+//     $name = $_POST['name'];
+//     $subject = $_POST['subject'];
+//     $mailFrom = $_POST['mail'];
+//     $message = $_POST['message'];
+
+//     $mailTo = 'teodonnelley@gmail.com';
+//     $headers = "From: ".$mailFrom;
+//     $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+
+//     mail($mailTo, $subject, $txt, $headers);
+//     header("Location: contact.php?mailsend");
+// }
